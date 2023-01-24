@@ -11,6 +11,11 @@
 		CE94E8F2297FF039008A2A58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E8F1297FF039008A2A58 /* ContentView.swift */; };
 		CE94E8F4297FF03A008A2A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE94E8F3297FF03A008A2A58 /* Assets.xcassets */; };
 		CE94E8F7297FF03A008A2A58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE94E8F6297FF03A008A2A58 /* Preview Assets.xcassets */; };
+		CE94E900297FF08F008A2A58 /* WidgetLayerColorExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E8FF297FF08F008A2A58 /* WidgetLayerColorExampleView.swift */; };
+		CE94E902297FF0BA008A2A58 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E901297FF0BA008A2A58 /* Appearance.swift */; };
+		CE94E904297FF0D9008A2A58 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E903297FF0D9008A2A58 /* Color+Extension.swift */; };
+		CE94E906297FF210008A2A58 /* WidgetLayerColorToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */; };
+		CE94E908297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E907297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		CE94E8F3297FF03A008A2A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE94E8F6297FF03A008A2A58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE94E8F8297FF03A008A2A58 /* WidgetLayerColorTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetLayerColorTool.entitlements; sourceTree = "<group>"; };
+		CE94E8FF297FF08F008A2A58 /* WidgetLayerColorExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerColorExampleView.swift; sourceTree = "<group>"; };
+		CE94E901297FF0BA008A2A58 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		CE94E903297FF0D9008A2A58 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerColorToolView.swift; sourceTree = "<group>"; };
+		CE94E907297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerAccentColorExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,10 @@
 		CE94E8EE297FF039008A2A58 /* WidgetLayerColorTool */ = {
 			isa = PBXGroup;
 			children = (
-				CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */,
+				CE94E8FE297FF055008A2A58 /* Widget+Color */,
+				CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */,
 				CE94E8F1297FF039008A2A58 /* ContentView.swift */,
+				CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */,
 				CE94E8F3297FF03A008A2A58 /* Assets.xcassets */,
 				CE94E8F8297FF03A008A2A58 /* WidgetLayerColorTool.entitlements */,
 				CE94E8F5297FF03A008A2A58 /* Preview Content */,
@@ -67,6 +79,17 @@
 				CE94E8F6297FF03A008A2A58 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE94E8FE297FF055008A2A58 /* Widget+Color */ = {
+			isa = PBXGroup;
+			children = (
+				CE94E901297FF0BA008A2A58 /* Appearance.swift */,
+				CE94E903297FF0D9008A2A58 /* Color+Extension.swift */,
+				CE94E8FF297FF08F008A2A58 /* WidgetLayerColorExampleView.swift */,
+				CE94E907297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift */,
+			);
+			path = "Widget+Color";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE94E906297FF210008A2A58 /* WidgetLayerColorToolView.swift in Sources */,
 				CE94E8F2297FF039008A2A58 /* ContentView.swift in Sources */,
+				CE94E904297FF0D9008A2A58 /* Color+Extension.swift in Sources */,
+				CE94E908297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift in Sources */,
+				CE94E900297FF08F008A2A58 /* WidgetLayerColorExampleView.swift in Sources */,
 				CE94E8F0297FF039008A2A58 /* WidgetLayerColorToolApp.swift in Sources */,
+				CE94E902297FF0BA008A2A58 /* Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +302,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Layer Color Tool";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +331,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Layer Color Tool";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
