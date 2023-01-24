@@ -16,7 +16,7 @@ struct WidgetLayerColorToolView: View {
                 .padding(10)
         }
         .toolbar {
-            ToolbarItem {
+            ToolbarItem(placement: .primaryAction) {
                 ColorPicker("Accent Color",
                             selection: $colorSelection,
                             supportsOpacity: false)

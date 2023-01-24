@@ -16,7 +16,14 @@ struct ContentView: View {
         } else {
             // Fallback on earlier versions
             NavigationView {
-                WidgetLayerColorToolView()
+                Group {
+                    List {
+                        Section {
+                            Text("Widget Layer Color Tool")
+                        }
+                    }
+                    WidgetLayerColorToolView()
+                }
             }
         }
     }
