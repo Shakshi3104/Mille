@@ -9,8 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            WidgetLayerColorToolView()
+        if #available(macOS 13.0, *) {
+            NavigationStack {
+                WidgetLayerColorToolView()
+            }
+        } else {
+            // Fallback on earlier versions
+            NavigationView {
+                WidgetLayerColorToolView()
+            }
         }
     }
 }
