@@ -19,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE6176AE2986979C00DEC7F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE6176B029869AC900DEC7F1 /* widget-layer-color-tool-0.3.0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "widget-layer-color-tool-0.3.0.gif"; sourceTree = "<group>"; };
 		CE94E8EC297FF039008A2A58 /* WidgetLayerColorTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetLayerColorTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerColorToolApp.swift; sourceTree = "<group>"; };
 		CE94E8F1297FF039008A2A58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,9 +45,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6176AF298698E400DEC7F1 /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				CE6176B029869AC900DEC7F1 /* widget-layer-color-tool-0.3.0.gif */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
 		CE94E8E3297FF038008A2A58 = {
 			isa = PBXGroup;
 			children = (
+				CE6176AF298698E400DEC7F1 /* materials */,
+				CE6176AE2986979C00DEC7F1 /* README.md */,
 				CE94E8EE297FF039008A2A58 /* WidgetLayerColorTool */,
 				CE94E8ED297FF039008A2A58 /* Products */,
 			);
