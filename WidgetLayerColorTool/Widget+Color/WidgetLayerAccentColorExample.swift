@@ -17,14 +17,14 @@ struct WidgetLayerAccentColorView: View {
         case .light:
             WidgetLayerColorView(
                 backgroundColor: accentColor.opacity(0.1),
-                widgetColor: .white,
-                widgetOnWidgetColor: accentColor.opacity(0.4),
+                secondaryColor: accentColor.opacity(0.2),
+                primaryColor: .white,
                 appearance: appearance)
         case .dark:
             WidgetLayerColorView(
                 backgroundColor: .black,
-                widgetColor: accentColor.opacity(0.3),
-                widgetOnWidgetColor: accentColor.opacity(0.4),
+                secondaryColor: accentColor.opacity(0.2),
+                primaryColor: accentColor.opacity(0.3),
                 appearance: appearance)
         }
     }
