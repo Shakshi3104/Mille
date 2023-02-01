@@ -151,7 +151,7 @@ struct ChartLayoutView: View {
 // MARK: -
 @available(iOS 16, macOS 13, *)
 struct ChartLayoutExampleView: View {
-    let accentColor: Color = .blue
+    @Binding var accentColor: Color
     let appearance: Appearance = .light
     
     var body: some View {
@@ -168,10 +168,10 @@ struct ChartLayoutExampleView: View {
                         .foregroundColor(.white)
                     
                     ChartLayoutView(
-                        backgroundColor: .blue.opacity(0.1),
-                        secondaryColor: .blue.opacity(0.2),
+                        backgroundColor: accentColor.opacity(0.1),
+                        secondaryColor: accentColor.opacity(0.2),
                         primaryColor: .white,
-                        accentColor: .blue,
+                        accentColor: accentColor,
                         appearance: .light
                     )
                 }
@@ -186,9 +186,9 @@ struct ChartLayoutExampleView: View {
                     
                 ChartLayoutView(
                     backgroundColor: .black,
-                    secondaryColor: .blue.opacity(0.1),
-                    primaryColor: .blue.opacity(0.2),
-                    accentColor: .blue,
+                    secondaryColor: accentColor.opacity(0.1),
+                    primaryColor: accentColor.opacity(0.2),
+                    accentColor: accentColor,
                     appearance: .dark
                 )
             }
@@ -200,6 +200,6 @@ struct ChartLayoutExampleView: View {
 @available(iOS 16, macOS 13, *)
 struct ChartLayoutExampleView_Previews: PreviewProvider {
     static var previews: some View {
-        ChartLayoutExampleView()
+        ChartLayoutExampleView(accentColor: .constant(.blue))
     }
 }
