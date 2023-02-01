@@ -16,6 +16,8 @@
 		CE94E904297FF0D9008A2A58 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E903297FF0D9008A2A58 /* Color+Extension.swift */; };
 		CE94E906297FF210008A2A58 /* WidgetLayerColorToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */; };
 		CE94E908297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E907297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift */; };
+		CEEC3F09298A8AF400D686EA /* ChartLayoutExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC3F08298A8AF400D686EA /* ChartLayoutExampleView.swift */; };
+		CEEC3F0B298AA9E700D686EA /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		CE94E903297FF0D9008A2A58 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerColorToolView.swift; sourceTree = "<group>"; };
 		CE94E907297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerAccentColorExample.swift; sourceTree = "<group>"; };
+		CEEC3F08298A8AF400D686EA /* ChartLayoutExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLayoutExampleView.swift; sourceTree = "<group>"; };
+		CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				CE94E8FE297FF055008A2A58 /* Widget+Color */,
+				CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */,
 				CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */,
+				CEEC3F08298A8AF400D686EA /* ChartLayoutExampleView.swift */,
 				CE94E8F1297FF039008A2A58 /* ContentView.swift */,
 				CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */,
 				CE94E8F3297FF03A008A2A58 /* Assets.xcassets */,
@@ -180,6 +186,8 @@
 				CE94E908297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift in Sources */,
 				CE94E900297FF08F008A2A58 /* WidgetLayerColorExampleView.swift in Sources */,
 				CE94E8F0297FF039008A2A58 /* WidgetLayerColorToolApp.swift in Sources */,
+				CEEC3F09298A8AF400D686EA /* ChartLayoutExampleView.swift in Sources */,
+				CEEC3F0B298AA9E700D686EA /* LabelStyle.swift in Sources */,
 				CE94E902297FF0BA008A2A58 /* Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
