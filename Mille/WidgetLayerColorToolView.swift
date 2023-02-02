@@ -40,13 +40,8 @@ struct WidgetLayerColorToolView: View {
                 WidgetLayerAccentColorExample(accentColor: $colorSelection)
                     .padding(10)
             case .chartLayout:
-                if #available(macOS 13, *) {
-                    ChartLayoutExampleView(accentColor: $colorSelection)
-                        .padding(10)
-                } else {
-                    // Fallback on earlier versions
-                    Text("Supported only macOS 13+")
-                }
+                ChartLayoutExampleView(accentColor: $colorSelection)
+                    .padding(10)
             }
         }
         .toolbar {

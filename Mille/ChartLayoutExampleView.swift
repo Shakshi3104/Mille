@@ -41,7 +41,6 @@ struct BarChart: View {
 }
 
 // MARK: -
-@available(iOS 16, macOS 13, *)
 struct ChartLayoutView: View {
     let backgroundColor: Color
     let secondaryColor: Color
@@ -132,9 +131,15 @@ struct ChartLayoutView: View {
                             }
                             .padding(.horizontal, 4)
                             
-                            BarChart(data: data,
-                                     foregroundColor: accentColor)
+                            if #available(macOS 13, *) {
+                                BarChart(data: data,
+                                         foregroundColor: accentColor)
                                 .frame(width: 110)
+                            } else {
+                                // Fallback on earlier versions
+                                Spacer()
+                                    .frame(width: 110)
+                            }
                         }
                         .frame(width: 140, height: 90)
                     }
@@ -149,7 +154,6 @@ struct ChartLayoutView: View {
 }
 
 // MARK: -
-@available(iOS 16, macOS 13, *)
 struct ChartLayoutExampleView: View {
     @Binding var accentColor: Color
     let appearance: Appearance = .light
