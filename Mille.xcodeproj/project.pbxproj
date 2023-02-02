@@ -16,12 +16,14 @@
 		CE94E904297FF0D9008A2A58 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E903297FF0D9008A2A58 /* Color+Extension.swift */; };
 		CE94E906297FF210008A2A58 /* WidgetLayerColorToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */; };
 		CE94E908297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E907297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift */; };
+		CEEC3F09298A8AF400D686EA /* ChartLayoutExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC3F08298A8AF400D686EA /* ChartLayoutExampleView.swift */; };
+		CEEC3F0B298AA9E700D686EA /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE6176AE2986979C00DEC7F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CE6176B029869AC900DEC7F1 /* widget-layer-color-tool-0.3.0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "widget-layer-color-tool-0.3.0.gif"; sourceTree = "<group>"; };
-		CE94E8EC297FF039008A2A58 /* WidgetLayerColorTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetLayerColorTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE94E8EC297FF039008A2A58 /* Mille.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mille.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerColorToolApp.swift; sourceTree = "<group>"; };
 		CE94E8F1297FF039008A2A58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE94E8F3297FF03A008A2A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		CE94E903297FF0D9008A2A58 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerColorToolView.swift; sourceTree = "<group>"; };
 		CE94E907297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerAccentColorExample.swift; sourceTree = "<group>"; };
+		CEEC3F08298A8AF400D686EA /* ChartLayoutExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLayoutExampleView.swift; sourceTree = "<group>"; };
+		CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,7 @@
 			children = (
 				CE6176AF298698E400DEC7F1 /* materials */,
 				CE6176AE2986979C00DEC7F1 /* README.md */,
-				CE94E8EE297FF039008A2A58 /* WidgetLayerColorTool */,
+				CE94E8EE297FF039008A2A58 /* Mille */,
 				CE94E8ED297FF039008A2A58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,23 +70,25 @@
 		CE94E8ED297FF039008A2A58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE94E8EC297FF039008A2A58 /* WidgetLayerColorTool.app */,
+				CE94E8EC297FF039008A2A58 /* Mille.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE94E8EE297FF039008A2A58 /* WidgetLayerColorTool */ = {
+		CE94E8EE297FF039008A2A58 /* Mille */ = {
 			isa = PBXGroup;
 			children = (
 				CE94E8FE297FF055008A2A58 /* Widget+Color */,
+				CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */,
 				CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */,
+				CEEC3F08298A8AF400D686EA /* ChartLayoutExampleView.swift */,
 				CE94E8F1297FF039008A2A58 /* ContentView.swift */,
 				CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */,
 				CE94E8F3297FF03A008A2A58 /* Assets.xcassets */,
 				CE94E8F8297FF03A008A2A58 /* WidgetLayerColorTool.entitlements */,
 				CE94E8F5297FF03A008A2A58 /* Preview Content */,
 			);
-			path = WidgetLayerColorTool;
+			path = Mille;
 			sourceTree = "<group>";
 		};
 		CE94E8F5297FF03A008A2A58 /* Preview Content */ = {
@@ -107,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE94E8EB297FF039008A2A58 /* WidgetLayerColorTool */ = {
+		CE94E8EB297FF039008A2A58 /* Mille */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE94E8FB297FF03A008A2A58 /* Build configuration list for PBXNativeTarget "WidgetLayerColorTool" */;
+			buildConfigurationList = CE94E8FB297FF03A008A2A58 /* Build configuration list for PBXNativeTarget "Mille" */;
 			buildPhases = (
 				CE94E8E8297FF039008A2A58 /* Sources */,
 				CE94E8E9297FF039008A2A58 /* Frameworks */,
@@ -119,9 +125,9 @@
 			);
 			dependencies = (
 			);
-			name = WidgetLayerColorTool;
+			name = Mille;
 			productName = WidgetLayerColorTool;
-			productReference = CE94E8EC297FF039008A2A58 /* WidgetLayerColorTool.app */;
+			productReference = CE94E8EC297FF039008A2A58 /* Mille.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE94E8E7297FF038008A2A58 /* Build configuration list for PBXProject "WidgetLayerColorTool" */;
+			buildConfigurationList = CE94E8E7297FF038008A2A58 /* Build configuration list for PBXProject "Mille" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -152,7 +158,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE94E8EB297FF039008A2A58 /* WidgetLayerColorTool */,
+				CE94E8EB297FF039008A2A58 /* Mille */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +186,8 @@
 				CE94E908297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift in Sources */,
 				CE94E900297FF08F008A2A58 /* WidgetLayerColorExampleView.swift in Sources */,
 				CE94E8F0297FF039008A2A58 /* WidgetLayerColorToolApp.swift in Sources */,
+				CEEC3F09298A8AF400D686EA /* ChartLayoutExampleView.swift in Sources */,
+				CEEC3F0B298AA9E700D686EA /* LabelStyle.swift in Sources */,
 				CE94E902297FF0BA008A2A58 /* Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,16 +313,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WidgetLayerColorTool/WidgetLayerColorTool.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Mille/WidgetLayerColorTool.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WidgetLayerColorTool/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Mille/Preview Content\"";
 				DEVELOPMENT_TEAM = WHBF4Z49B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Widget Layer Color Tool";
+				INFOPLIST_KEY_CFBundleDisplayName = Mille;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +332,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.WidgetLayerColorTool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.Mille;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,16 +344,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WidgetLayerColorTool/WidgetLayerColorTool.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Mille/WidgetLayerColorTool.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WidgetLayerColorTool/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Mille/Preview Content\"";
 				DEVELOPMENT_TEAM = WHBF4Z49B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Widget Layer Color Tool";
+				INFOPLIST_KEY_CFBundleDisplayName = Mille;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -353,7 +363,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.WidgetLayerColorTool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.Mille;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -363,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE94E8E7297FF038008A2A58 /* Build configuration list for PBXProject "WidgetLayerColorTool" */ = {
+		CE94E8E7297FF038008A2A58 /* Build configuration list for PBXProject "Mille" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE94E8F9297FF03A008A2A58 /* Debug */,
@@ -372,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE94E8FB297FF03A008A2A58 /* Build configuration list for PBXNativeTarget "WidgetLayerColorTool" */ = {
+		CE94E8FB297FF03A008A2A58 /* Build configuration list for PBXNativeTarget "Mille" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE94E8FC297FF03A008A2A58 /* Debug */,
