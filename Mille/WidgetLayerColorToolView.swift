@@ -9,13 +9,13 @@ import SwiftUI
 
 // MARK: - Tool selection
 enum ToolSelection: String, CaseIterable {
-    case naturalColor = "Natural Color"
+    case achromaticColor = "Achromatic Color"
     case accentColor = "Accent Color"
     case chartLayout = "Chart Layout"
     
     func systemImageName() -> String {
         switch self {
-        case .naturalColor:
+        case .achromaticColor:
             return "leaf"
         case .accentColor:
             return "paintpalette"
@@ -33,7 +33,7 @@ struct WidgetLayerColorToolView: View {
     var body: some View {
         VStack {
             switch toolSelection {
-            case .naturalColor:
+            case .achromaticColor:
                 WidgetLayerColorExampleView()
                     .padding(10)
             case .accentColor:
@@ -63,7 +63,7 @@ struct WidgetLayerColorToolView: View {
                             selection: $colorSelection,
                             supportsOpacity: false)
                     .labelsHidden()
-                    .disabled(toolSelection == .naturalColor)
+                    .disabled(toolSelection == .achromaticColor)
             }
         }
     }
