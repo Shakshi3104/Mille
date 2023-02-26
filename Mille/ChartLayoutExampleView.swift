@@ -91,9 +91,15 @@ struct ChartLayoutView: View {
                         .foregroundColor(secondaryColor)
                         .padding(4)
                     VStack(alignment: .leading,spacing: 8) {
-                        Label("Sales", systemImage: "basket")
-                            .foregroundColor(appearance.foregroundColor)
-                            .labelStyle(DashboardLabelStyle())
+                        if #available(macOS 13, *) {
+                            Label("Sales", systemImage: "basket")
+                                .foregroundColor(appearance.foregroundColor)
+                                .labelStyle(DashboardLabelStyle())
+                        } else {
+                            Label("Sales", systemImage: "yensign.circle")
+                                .foregroundColor(appearance.foregroundColor)
+                                .labelStyle(DashboardLabelStyle())
+                        }
                         Label("Card", systemImage: "creditcard")
                             .foregroundColor(appearance.foregroundColor)
                             .labelStyle(DashboardLabelStyle())
