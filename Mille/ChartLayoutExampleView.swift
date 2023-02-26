@@ -40,6 +40,22 @@ struct BarChart: View {
     }
 }
 
+// BarChart for macOS 12
+struct BarChartView: View {
+    var data: [DummyData]
+    let foregroundColor: Color
+    
+    var body: some View {
+        HStack(alignment: .bottom, spacing: 8) {
+            ForEach(data) { datum in
+                RoundedRectangle(cornerRadius: 2)
+                    .foregroundColor(foregroundColor)
+                    .frame(width: 8, height: CGFloat(4 * datum.value))
+            }
+        }
+    }
+}
+
 // MARK: -
 struct ChartLayoutView: View {
     let backgroundColor: Color
@@ -91,9 +107,15 @@ struct ChartLayoutView: View {
                         .foregroundColor(secondaryColor)
                         .padding(4)
                     VStack(alignment: .leading,spacing: 8) {
-                        Label("Sales", systemImage: "basket")
-                            .foregroundColor(appearance.foregroundColor)
-                            .labelStyle(DashboardLabelStyle())
+                        if #available(macOS 13, *) {
+                            Label("Sales", systemImage: "basket")
+                                .foregroundColor(appearance.foregroundColor)
+                                .labelStyle(DashboardLabelStyle())
+                        } else {
+                            Label("Sales", systemImage: "yensign.circle")
+                                .foregroundColor(appearance.foregroundColor)
+                                .labelStyle(DashboardLabelStyle())
+                        }
                         Label("Card", systemImage: "creditcard")
                             .foregroundColor(appearance.foregroundColor)
                             .labelStyle(DashboardLabelStyle())
@@ -137,8 +159,9 @@ struct ChartLayoutView: View {
                                 .frame(width: 110)
                             } else {
                                 // Fallback on earlier versions
-                                Spacer()
-                                    .frame(width: 110)
+                                BarChartView(data: data,
+                                             foregroundColor: accentColor)
+                                .frame(width: 110)
                             }
                         }
                         .frame(width: 140, height: 90)
