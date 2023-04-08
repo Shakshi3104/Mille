@@ -28,7 +28,7 @@ enum ToolSelection: String, CaseIterable {
 // MARK: -
 struct WidgetLayerColorToolView: View {
     @State private var colorSelection: Color = .blue
-    @State private var toolSelection: ToolSelection = .accentColor
+    @State private var toolSelection: ToolSelection = .chartLayout
     
     var body: some View {
         VStack {

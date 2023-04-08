@@ -19,7 +19,7 @@ struct ContentView: View {
                 Group {
                     List {
                         Section {
-                            Text("Widget Layer Color Tool")
+                            Text("Mille")
                         }
                     }
                     WidgetLayerColorToolView()
