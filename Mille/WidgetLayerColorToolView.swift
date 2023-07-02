@@ -46,6 +46,19 @@ struct WidgetLayerColorToolView: View {
         }
         .toolbar {
             // Tool selector
+            // visionOS
+            #if os(xrOS)
+            ToolbarItemGroup(placement: .bottomOrnament) {
+                ForEach(ToolSelection.allCases, id: \.self) { (selection) in
+                    Button {
+                        toolSelection = selection
+                    } label: {
+                        Label(selection.rawValue, systemImage: selection.systemImageName())
+                    }
+                }
+            }
+            // macOS
+            #else
             ToolbarItemGroup(placement: .primaryAction) {
                 Picker(selection: $toolSelection) {
                     ForEach(ToolSelection.allCases, id: \.self) { (selection) in
@@ -56,6 +69,7 @@ struct WidgetLayerColorToolView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
+            #endif
             
             // Color picker
             ToolbarItem(placement: .primaryAction) {
