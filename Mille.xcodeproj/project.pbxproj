@@ -36,7 +36,7 @@
 		CE94E903297FF0D9008A2A58 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerColorToolView.swift; sourceTree = "<group>"; };
 		CE94E907297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerAccentColorExample.swift; sourceTree = "<group>"; };
-		CE9E1D152A5153A700889920 /* mille-0.6.0-visionOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mille-0.6.0-visionOS.png"; sourceTree = "<group>"; };
+		CE9E1D152A5153A700889920 /* mille-0.7.0-visionOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mille-0.7.0-visionOS.png"; sourceTree = "<group>"; };
 		CEEC3F08298A8AF400D686EA /* ChartLayoutExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLayoutExampleView.swift; sourceTree = "<group>"; };
 		CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +58,7 @@
 				CE89691C298BEA6000BD78EC /* mille-icon.png */,
 				CE89691B298BE8E700BD78EC /* mille-0.5.0-accent-color.gif */,
 				CE89691A298BE8E700BD78EC /* mille-0.5.0-chart-layout.gif */,
-				CE9E1D152A5153A700889920 /* mille-0.6.0-visionOS.png */,
+				CE9E1D152A5153A700889920 /* mille-0.7.0-visionOS.png */,
 			);
 			path = materials;
 			sourceTree = "<group>";

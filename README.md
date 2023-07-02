@@ -16,13 +16,14 @@ On dashboards, **widgets** are a shortcut for making information blocks recogniz
     <img src="materials/mille-0.5.0-chart-layout.gif" width=1024>
 </p>
 
-Mille 0.6.0 supports provisionally visionOS 1.0 beta!
+Mille 0.7.0 supports provisionally **visionOS** 1.0 beta!
 
 <p align="center">
-    <img src="materials/mille-0.6.0-visionOS.png" width=1024>
+    <img src="materials/mille-0.7.0-visionOS.png" width=1024>
 </p>
 
 ## Requirements
 
 - macOS 12.0+
-- Xcode 14.2+
+- visionOS 1.0+
+- Xcode 15.0 beta 2+
