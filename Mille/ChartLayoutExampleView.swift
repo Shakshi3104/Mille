@@ -99,11 +99,11 @@ struct ChartLayoutView: View {
                 .frame(width: 270, height: 220)
                 .foregroundColor(backgroundColor)
             
-            HStack(spacing: 8) {
+            HStack(spacing: 4) {
                 // Navigation
                 ZStack {
                     RoundedRectangle(cornerRadius: 5)
-                        .frame(width: 80, height: 200)
+                        .frame(width: 95, height: 200)
                         .foregroundColor(secondaryColor)
                         .padding(4)
                     VStack(alignment: .leading,spacing: 8) {
