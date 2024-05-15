@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE8EB6062BF4DF4D007CBB14 /* DesignSystemBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EB6052BF4DF4D007CBB14 /* DesignSystemBookView.swift */; };
+		CE8EB6092BF4E4B5007CBB14 /* DesignSystemPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EB6082BF4E4B5007CBB14 /* DesignSystemPreviewView.swift */; };
 		CE94E8F0297FF039008A2A58 /* WidgetLayerColorToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */; };
 		CE94E8F2297FF039008A2A58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E8F1297FF039008A2A58 /* ContentView.swift */; };
 		CE94E8F4297FF03A008A2A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE94E8F3297FF03A008A2A58 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		CE89691B298BE8E700BD78EC /* mille-0.5.0-accent-color.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mille-0.5.0-accent-color.gif"; sourceTree = "<group>"; };
 		CE89691C298BEA6000BD78EC /* mille-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mille-icon.png"; sourceTree = "<group>"; };
 		CE8EB6052BF4DF4D007CBB14 /* DesignSystemBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemBookView.swift; sourceTree = "<group>"; };
+		CE8EB6082BF4E4B5007CBB14 /* DesignSystemPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemPreviewView.swift; sourceTree = "<group>"; };
 		CE94E8EC297FF039008A2A58 /* Mille.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mille.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerColorToolApp.swift; sourceTree = "<group>"; };
 		CE94E8F1297FF039008A2A58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 			path = materials;
 			sourceTree = "<group>";
 		};
+		CE8EB6072BF4E492007CBB14 /* DesignSystemBook */ = {
+			isa = PBXGroup;
+			children = (
+				CE8EB6082BF4E4B5007CBB14 /* DesignSystemPreviewView.swift */,
+			);
+			path = DesignSystemBook;
+			sourceTree = "<group>";
+		};
 		CE94E8E3297FF038008A2A58 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		CE94E8EE297FF039008A2A58 /* Mille */ = {
 			isa = PBXGroup;
 			children = (
+				CE8EB6072BF4E492007CBB14 /* DesignSystemBook */,
 				CE94E8FE297FF055008A2A58 /* Widget+Color */,
 				CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */,
 				CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */,
@@ -191,6 +202,7 @@
 			files = (
 				CE94E906297FF210008A2A58 /* WidgetLayerColorToolView.swift in Sources */,
 				CE94E8F2297FF039008A2A58 /* ContentView.swift in Sources */,
+				CE8EB6092BF4E4B5007CBB14 /* DesignSystemPreviewView.swift in Sources */,
 				CE94E904297FF0D9008A2A58 /* Color+Extension.swift in Sources */,
 				CE94E908297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift in Sources */,
 				CE94E900297FF08F008A2A58 /* WidgetLayerColorExampleView.swift in Sources */,
