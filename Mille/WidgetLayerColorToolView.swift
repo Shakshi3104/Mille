@@ -47,7 +47,7 @@ struct WidgetLayerColorToolView: View {
         .toolbar {
             // Tool selector
             // visionOS
-            #if os(xrOS)
+            #if os(visionOS)
             ToolbarItemGroup(placement: .bottomOrnament) {
                 ForEach(ToolSelection.allCases, id: \.self) { (selection) in
                     Button {
