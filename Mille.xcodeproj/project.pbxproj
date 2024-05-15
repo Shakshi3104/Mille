@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8EB6062BF4DF4D007CBB14 /* DesignSystemBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EB6052BF4DF4D007CBB14 /* DesignSystemBookView.swift */; };
 		CE94E8F0297FF039008A2A58 /* WidgetLayerColorToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */; };
 		CE94E8F2297FF039008A2A58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E8F1297FF039008A2A58 /* ContentView.swift */; };
 		CE94E8F4297FF03A008A2A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE94E8F3297FF03A008A2A58 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		CE89691A298BE8E700BD78EC /* mille-0.5.0-chart-layout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mille-0.5.0-chart-layout.gif"; sourceTree = "<group>"; };
 		CE89691B298BE8E700BD78EC /* mille-0.5.0-accent-color.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mille-0.5.0-accent-color.gif"; sourceTree = "<group>"; };
 		CE89691C298BEA6000BD78EC /* mille-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mille-icon.png"; sourceTree = "<group>"; };
+		CE8EB6052BF4DF4D007CBB14 /* DesignSystemBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemBookView.swift; sourceTree = "<group>"; };
 		CE94E8EC297FF039008A2A58 /* Mille.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mille.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLayerColorToolApp.swift; sourceTree = "<group>"; };
 		CE94E8F1297FF039008A2A58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */,
 				CE94E905297FF210008A2A58 /* WidgetLayerColorToolView.swift */,
 				CEEC3F08298A8AF400D686EA /* ChartLayoutExampleView.swift */,
+				CE8EB6052BF4DF4D007CBB14 /* DesignSystemBookView.swift */,
 				CE94E8F1297FF039008A2A58 /* ContentView.swift */,
 				CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */,
 				CE94E8F3297FF03A008A2A58 /* Assets.xcassets */,
@@ -144,7 +147,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					CE94E8EB297FF039008A2A58 = {
 						CreatedOnToolsVersion = 14.2;
@@ -192,6 +195,7 @@
 				CE94E908297FF5EF008A2A58 /* WidgetLayerAccentColorExample.swift in Sources */,
 				CE94E900297FF08F008A2A58 /* WidgetLayerColorExampleView.swift in Sources */,
 				CE94E8F0297FF039008A2A58 /* WidgetLayerColorToolApp.swift in Sources */,
+				CE8EB6062BF4DF4D007CBB14 /* DesignSystemBookView.swift in Sources */,
 				CEEC3F09298A8AF400D686EA /* ChartLayoutExampleView.swift in Sources */,
 				CEEC3F0B298AA9E700D686EA /* LabelStyle.swift in Sources */,
 				CE94E902297FF0BA008A2A58 /* Appearance.swift in Sources */,
@@ -205,6 +209,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -267,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -341,7 +347,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.Mille;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,7 +384,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.Mille;
 				PRODUCT_NAME = "$(TARGET_NAME)";
