@@ -12,6 +12,7 @@ enum ToolSelection: String, CaseIterable {
     case achromaticColor = "Achromatic Color"
     case accentColor = "Accent Color"
     case chartLayout = "Chart Layout"
+    case designSystem = "Design System"
     
     func systemImageName() -> String {
         switch self {
@@ -21,6 +22,8 @@ enum ToolSelection: String, CaseIterable {
             return "paintpalette"
         case .chartLayout:
             return "chart.bar"
+        case .designSystem:
+            return "book.pages"
         }
     }
 }
@@ -41,6 +44,9 @@ struct WidgetLayerColorToolView: View {
                     .padding(10)
             case .chartLayout:
                 ChartLayoutExampleView(accentColor: $colorSelection)
+                    .padding(10)
+            case .designSystem:
+                DesignSystemBookView()
                     .padding(10)
             }
         }

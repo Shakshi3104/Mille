@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct DesignSystemBookView: View {
+    @State private var accentColorSelection: Color = .blue
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationSplitView {
+            List {
+                Section("Color") {
+                    HStack {
+                        Text("Accent Color")
+                        Spacer()
+                        ColorPicker(selection: $accentColorSelection, supportsOpacity: false) {
+                            Text("Accent Color")
+                        }
+                        .labelsHidden()
+                    }
+                }
+                
+            }
+            .navigationSplitViewColumnWidth(min: 200, ideal: 300, max: 350)
+        } detail: {
+            ChartLayoutExampleView(accentColor: $accentColorSelection)
+        }
+
     }
 }
 
