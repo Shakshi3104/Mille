@@ -7,32 +7,63 @@
 
 import SwiftUI
 
+// MARK: -
+struct ColorPickerItem: View {
+    let title: String
+    @Binding var selectionColor: Color
+    
+    var body: some View {
+        HStack {
+            Text(title)
+            Spacer()
+            ColorPicker(selection: $selectionColor, supportsOpacity: false) {
+                Text(title)
+            }
+            .labelsHidden()
+        }
+    }
+}
+
+// MARK: -
 struct DesignSystemBookView: View {
     @State private var accentColorSelection: Color = .blue
+    @State private var baseColorSelection: Color = .black
+    @State private var headlineColorSelection: Color = .black
+    @State private var captionColorSelection: Color = .gray
     
     var body: some View {
         NavigationSplitView {
             List {
-                Section("Color") {
-                    HStack {
-                        Text("Accent Color")
-                        Spacer()
-                        ColorPicker(selection: $accentColorSelection, supportsOpacity: false) {
-                            Text("Accent Color")
-                        }
-                        .labelsHidden()
-                    }
+                Section("Color System") {
+                    ColorPickerItem(title: "Accent Color",
+                                    selectionColor: $accentColorSelection)
                 }
                 
+                Section("Base Color") {
+                    ColorPickerItem(title: "Body Text Color",
+                                    selectionColor: $baseColorSelection)
+                    
+                    ColorPickerItem(title: "Headline Text Color",
+                                    selectionColor: $headlineColorSelection)
+                    
+                    ColorPickerItem(title: "Caption Text Color",
+                                    selectionColor: $captionColorSelection)
+                }
             }
-            .navigationSplitViewColumnWidth(min: 200, ideal: 300, max: 350)
+            .navigationSplitViewColumnWidth(min: 300, ideal: 350, max: 500)
         } detail: {
-            ChartLayoutExampleView(accentColor: $accentColorSelection)
+            DesignSystemPreviewView(
+                accentColor: accentColorSelection,
+                baseColor: baseColorSelection,
+                headlineColor: headlineColorSelection,
+                captionColor: captionColorSelection
+            )
         }
 
     }
 }
 
+// MARK: -
 #Preview {
     DesignSystemBookView()
 }
