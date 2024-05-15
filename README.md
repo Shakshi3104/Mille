@@ -24,6 +24,6 @@ Mille 0.7.0 supports provisionally **visionOS** 1.0 beta!
 
 ## Requirements
 
-- macOS 12.0+
+- macOS 13.0+
 - visionOS 1.0+
-- Xcode 15.0 beta 2+
+- Xcode 15.0+
