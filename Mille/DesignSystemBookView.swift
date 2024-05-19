@@ -34,23 +34,15 @@ struct DesignSystemBookView: View {
     var body: some View {
         NavigationSplitView {
             List {
-                Section("Color System") {
-                    ColorPickerItem(title: "Accent Color",
-                                    selectionColor: $accentColorSelection)
+                NavigationLink {
+                    colorSystemBook()
+                } label: {
+                    Text("Color")
                 }
-                
-                Section("Base Color") {
-                    ColorPickerItem(title: "Body Text Color",
-                                    selectionColor: $baseColorSelection)
-                    
-                    ColorPickerItem(title: "Headline Text Color",
-                                    selectionColor: $headlineColorSelection)
-                    
-                    ColorPickerItem(title: "Caption Text Color",
-                                    selectionColor: $captionColorSelection)
-                }
+
             }
-            .navigationSplitViewColumnWidth(min: 300, ideal: 350, max: 500)
+        } content: {
+            colorSystemBook()
         } detail: {
             DesignSystemPreviewView(
                 accentColor: accentColorSelection,
@@ -59,7 +51,28 @@ struct DesignSystemBookView: View {
                 captionColor: captionColorSelection
             )
         }
-
+    }
+    
+    @ViewBuilder
+    private func colorSystemBook() -> some View {
+        List {
+            Section("Color System") {
+                ColorPickerItem(title: "Accent Color",
+                                selectionColor: $accentColorSelection)
+            }
+            
+            Section("Base Color") {
+                ColorPickerItem(title: "Body Text Color",
+                                selectionColor: $baseColorSelection)
+                
+                ColorPickerItem(title: "Headline Text Color",
+                                selectionColor: $headlineColorSelection)
+                
+                ColorPickerItem(title: "Caption Text Color",
+                                selectionColor: $captionColorSelection)
+            }
+        }
+        .navigationSplitViewColumnWidth(min: 300, ideal: 350, max: 500)
     }
 }
 
