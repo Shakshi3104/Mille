@@ -26,6 +26,8 @@ struct ColorPickerItem: View {
 
 // MARK: -
 struct DesignSystemBookView: View {
+    @State private var designSystemItemSelection: DesignSystemItem = .color
+    
     @State private var accentColorSelection: Color = .blue
     @State private var baseColorSelection: Color = .black
     @State private var headlineColorSelection: Color = .black
@@ -33,16 +35,19 @@ struct DesignSystemBookView: View {
     
     var body: some View {
         NavigationSplitView {
-            List {
-                NavigationLink {
-                    colorSystemBook()
-                } label: {
-                    Text("Color")
+            List(DesignSystemItem.allCases, id: \.self, 
+                 selection: $designSystemItemSelection) { designSystemItem in
+                NavigationLink(value: designSystemItem) {
+                    Label(designSystemItem.rawValue,
+                          systemImage: designSystemItem.symbolName())
                 }
-
+                
             }
         } content: {
-            colorSystemBook()
+            switch designSystemItemSelection {
+            case .color:
+                colorSystemBook()
+            }
         } detail: {
             DesignSystemPreviewView(
                 accentColor: accentColorSelection,
