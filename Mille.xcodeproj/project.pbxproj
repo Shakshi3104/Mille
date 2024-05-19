@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8BE6D02BFA09B200F9B06D /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BE6CF2BFA09B200F9B06D /* BarChartView.swift */; };
 		CE8EB6062BF4DF4D007CBB14 /* DesignSystemBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EB6052BF4DF4D007CBB14 /* DesignSystemBookView.swift */; };
 		CE8EB6092BF4E4B5007CBB14 /* DesignSystemPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8EB6082BF4E4B5007CBB14 /* DesignSystemPreviewView.swift */; };
 		CE94E8F0297FF039008A2A58 /* WidgetLayerColorToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94E8EF297FF039008A2A58 /* WidgetLayerColorToolApp.swift */; };
@@ -27,6 +28,7 @@
 		CE89691A298BE8E700BD78EC /* mille-0.5.0-chart-layout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mille-0.5.0-chart-layout.gif"; sourceTree = "<group>"; };
 		CE89691B298BE8E700BD78EC /* mille-0.5.0-accent-color.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mille-0.5.0-accent-color.gif"; sourceTree = "<group>"; };
 		CE89691C298BEA6000BD78EC /* mille-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mille-icon.png"; sourceTree = "<group>"; };
+		CE8BE6CF2BFA09B200F9B06D /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		CE8EB6052BF4DF4D007CBB14 /* DesignSystemBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemBookView.swift; sourceTree = "<group>"; };
 		CE8EB6082BF4E4B5007CBB14 /* DesignSystemPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemPreviewView.swift; sourceTree = "<group>"; };
 		CE94E8EC297FF039008A2A58 /* Mille.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mille.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,14 @@
 			path = materials;
 			sourceTree = "<group>";
 		};
+		CE8BE6CE2BFA099300F9B06D /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				CE8BE6CF2BFA09B200F9B06D /* BarChartView.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 		CE8EB6072BF4E492007CBB14 /* DesignSystemBook */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		CE94E8EE297FF039008A2A58 /* Mille */ = {
 			isa = PBXGroup;
 			children = (
+				CE8BE6CE2BFA099300F9B06D /* Charts */,
 				CE8EB6072BF4E492007CBB14 /* DesignSystemBook */,
 				CE94E8FE297FF055008A2A58 /* Widget+Color */,
 				CEEC3F0A298AA9E700D686EA /* LabelStyle.swift */,
@@ -211,6 +222,7 @@
 				CEEC3F09298A8AF400D686EA /* ChartLayoutExampleView.swift in Sources */,
 				CEEC3F0B298AA9E700D686EA /* LabelStyle.swift in Sources */,
 				CE94E902297FF0BA008A2A58 /* Appearance.swift in Sources */,
+				CE8BE6D02BFA09B200F9B06D /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
